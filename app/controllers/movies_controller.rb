@@ -10,6 +10,11 @@ class MoviesController < ApplicationController
         @movies = Movie.all
     end
     
+    def new
+        @movie = Movie.new
+        # defualt: render 'new' template
+    end
+    
     # add below all other methods
 private
 
