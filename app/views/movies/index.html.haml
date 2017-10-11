@@ -15,3 +15,8 @@
           %td= movie.release_date
           %td= link_to "More about #{movie.title}", movie_path(movie)
           = link_to 'Add new moview', new_movie_path
+        -if flash[:notice]
+         #notice.message= flash[:notice]
+        -elsif flash[:warning]
+        #warning.message= flash[:warning]
+        
